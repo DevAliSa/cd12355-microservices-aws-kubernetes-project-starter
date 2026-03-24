@@ -1,0 +1,6 @@
+Hello, 
+I am unable to proceed with my project due to a lab infrastructure issue.
+The Node Group is showing as ACTIVE in AWS, but kubectl get nodes returns No resources found.
+Upon inspecting the cluster control plane using kubectl get pods -n kube-system, essential pods like coredns and metrics-server are stuck in Pending state for over 90 minutes.
+It seems there is an issue with the AWS VPC CNI or the aws-auth ConfigMap role mapping in this specific lab environment preventing worker nodes from registering.
+Could you please reset my AWS lab backend or provide a fully functional workspace so I can submit my YAML files? Thank you!
